@@ -1,0 +1,4 @@
+main: io.github.kamiya10.App
+name: linking
+version: 0.1
+depend: [DiscordSRV]
