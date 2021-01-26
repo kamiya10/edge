@@ -5,12 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.kamiya10</groupId>
-    <artifactId>linking</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <artifactId>edge</artifactId>
+    <version>1.0</version>
     <packaging>jar</packaging>
-    <name>linking</name>
+    <name>edge</name>
     <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
+    <url>https://github.com/kamiya10/edge</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

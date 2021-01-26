@@ -12,7 +12,6 @@ import github.scarsz.discordsrv.dependencies.jda.api.entities.User;
 import github.scarsz.discordsrv.util.DiscordUtil;
 
 public class gift implements CommandInterface {
-
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String commandLabel, String[] args) {
         Player p = (Player) sender;
@@ -31,7 +30,7 @@ public class gift implements CommandInterface {
             return false;
         }
         
-        ItemStack[] items = {new ItemStack(Material.TRIPWIRE_HOOK)};
+        ItemStack[] items = {new ItemStack(Material.getMaterial(Main.plugin.getConfig().getString("item")))};
         p.getInventory().addItem(items);
         return false;
     }

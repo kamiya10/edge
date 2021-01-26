@@ -1,5 +1,5 @@
-main: io.github.kamiya10.App
-name: linking
+main: io.github.kamiya10.Main
+name: edge
 version: 0.1
 depend: [DiscordSRV]
 commands:

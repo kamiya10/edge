@@ -1,8 +1,12 @@
 package io.github.kamiya10;
 
+import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class App extends JavaPlugin {
+
+public class Main extends JavaPlugin {
+    public static Main plugin;
+    FileConfiguration config = getConfig();
 
     public void registerCommands() {
         CommandHandler handler = new CommandHandler();
@@ -14,6 +18,10 @@ public class App extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        config.addDefault("item", "TRIPWIRE_HOOK");
+        config.options().copyDefaults(true);
+        saveConfig();
+        plugin = this;
         this.registerCommands();
         getLogger().info("O 已啟用插件");
     }
