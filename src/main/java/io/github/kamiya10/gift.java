@@ -32,6 +32,7 @@ public class gift implements CommandInterface {
         
         ItemStack[] items = {new ItemStack(Material.getMaterial(Main.plugin.getConfig().getString("item")))};
         p.getInventory().addItem(items);
+        p.sendMessage(Main.plugin.getConfig().getString("MessageOnGet"));
         return false;
     }
     

@@ -18,6 +18,7 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        config.addDefault("MessageOnGet", "你獲得了Discord帳號連結獎勵");
         config.addDefault("item", "TRIPWIRE_HOOK");
         config.options().copyDefaults(true);
         saveConfig();
