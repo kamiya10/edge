@@ -5,3 +5,6 @@ depend: [DiscordSRV]
 commands:
   edge:
     description: "edge的指令"
+    usage: |
+           /edge - 顯示版本
+           /edge gift - 獲取Discord連結禮包

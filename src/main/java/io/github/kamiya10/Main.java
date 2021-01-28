@@ -14,6 +14,7 @@ public class Main extends JavaPlugin {
         handler.register("edge", new edge());
         handler.register("gift", new gift());
         getCommand("edge").setExecutor(handler);
+        getCommand("edge").setTabCompleter(new TabComplete());
     }
 
     @Override
@@ -24,11 +25,11 @@ public class Main extends JavaPlugin {
         saveConfig();
         plugin = this;
         this.registerCommands();
-        getLogger().info("O 已啟用插件");
+        getLogger().info("⭕️ 已啟用插件");
     }
 
     @Override
     public void onDisable() {
-        getLogger().info("X 已停用插件");
+        getLogger().info("❌ 已停用插件");
     }
 }
